@@ -1,135 +1,790 @@
 <!DOCTYPE html>
-<html lang="fr">
-	<head>
-		<meta charset="UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<title>Portfolio d'Angeline Jerome</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="css/style.css"/>
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-		<meta name="description" content="site internet de Angeline Jerome numérologue (numérologie stratégique®) en Charente Maritime"/>
-		<meta name="language" content="fr"/>
+<html lang="en">
 
-		<meta name="twitter:card" content="summary_large_image"/>
-		<meta name="twitter:title" content="site internet de Angeline Jerome numérologue (numérologie stratégique®) en Charente Maritime"/>
-		<meta name="twitter:description" content="site internet de Angeline Jerome numérologue (numérologie stratégique®) en Charente Maritime"/>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Site de numérologie Stratégique Angelus & Numeri</title>
+  <meta name="description" content="Présentation de la numérologie stratégique avec possibilité de prendre RDV pour recevoir son théme">
+  <meta name="keywords" content="numérologie stratégique, activateur de potentiels, thème numérologie">
 
-		<meta property="og:title" content="site internet de Angeline Jerome numérologue (numérologie stratégique®) en Charente Maritime"/>
-		<meta property="og:type" content="website"/>
-		<meta property="og:description" content="site internet de Angeline Jerome numérologue (numérologie stratégique®) en Charente Maritime"/>
-		<meta property="og:url" content="https://github.com/Angerome22/" />
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-	<body>
-		<div class="main-container">
-			<header>
-				<div class="w3-bar w3-dark-grey">
-					<a href="#p" class="w3-bar-item w3-button w3-mobile w3-red" style="width:25%">Présentation</a>
-					<a href="#c" class="w3-bar-item w3-button w3-mobile" style="width:25%">Compétences</a>
-					<a href="#r" class="w3-bar-item w3-button w3-mobile" style="width:25%">Réalisations</a>
-					<a href="#ct" class="w3-bar-item w3-button w3-mobile" style="width:25%">Contact</a>
-				  </div>
-			</header>
-			<main>
-					<section class="hebergements">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-                        <h2 class="section-title" id="p" >Présentation</h2>   
-                        <div class="presentation">
-                            <figure>
-                                <img src="./images/logo/Photo identité angeline.jpg" alt="photo Angeline"/> 
-                            </figure>
-                            <article class="apropos">
-                                <h2>Angeline JEROME</h2>
-                                <p>A la suite de l'exercice de mon métier, avec une carrière de plus de 30 années dans les domaines de la gestion et comptabilité, j'ai décidé de compléter mes capacités et compétences professionnelles en effectuant une formation volontaire et motivée dans le développement web avec une préférence pour la création d'applications mobiles qui seront en interaction avec toutes mes scènes de vie : professionnelle, familiale et associative.</p>
-								<p>J'ai bénéficié durant ma carrière, d'une interface importante avec le domaine de l'enseignement et je compte continuer mes productions de savoirs grâce à la formalisation d'outils qui seront mis à la disposition de mes futurs partenaires. Mon premier projet, qui sera mis en place à la suite de ma formation sera la création d'une application d'identification, de connaissance et de reconnaissance de végétaux, au profit de l'entreprise "Hortis-viridios" de mon conjoint  avec une collaboration technique de partenaires professionnels reconnus.</p>
-                            </article>
-                        </div>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-                        <h2 class="section-title" id="c" >Compétences</h2>   
-                        <div class="competences">
-                            <i class="fa-brands fa-html5 fa-3x"></i>
-							<i class="fa-brands fa-css3-alt fa-3x"></i>
-							<i class="fa-brands fa-js fa-3x"></i>
-							<i class="fa-brands fa-github fa-3x"></i>
-							<i class="fa-brands fa-node fa-3x"></i>
-							<i class="fa-brands fa-react fa-3x"></i>
-						<div class="formation">
-							<p> Développeur Web : Openclassrooms</p>
-							<p>Niveau certificat Développeur d'applications mobiles : CNAM</p>
-						</div>
-						</div>
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 
-						<h2 class="section-title" id="r">Réalisations</h2>
-						<div class="hebergements-cards">
-								<article class="card">
-										<h2 class title-card>Booki</h2>
-										<img src="./images/realisations/Booki.JPG" alt="image projet booki"/>
-										<p>HTML/CSS</p>
-										<a href="https://github.com/Angerome22/code_booki/tree/header" target="_blank">Lien github booki</a>
-								</article>
-								<article class="card">
-									<h2 class title-card>Portfolio Sophie Bluel</h2>
-									<img src="./images/realisations/sophiebluel.JPG" alt="image projet portfolio Sophie Bluel"/>
-									<p>HTML/CSS/JS</p>
-									<a href="https://github.com/Angerome22/Portfolio-sophie-bluel" target="_blank">Lien github portfolio Sophie Bluel</a>
-								</article>
-								<article class="card">
-									<h2 class title-card>Nina Carducci</h2>
-									<img src="./images/realisations/ninacarducci.JPG" alt="image du projet Nina Carducci"/>
-									<p>SEO/LIGHTOUSE/WAVE/CHROME DEVTOOLS</p>
-									<a href="https://github.com/Angerome22/Nina-Carducci-Dev-New" target="_blank">Lien github Nina Carducci</a>
-								</article>
-								<article class="card">
-									<h2 class title-card>Kasa</h2>
-									<img src="./images/realisations/kasa.JPG" alt="image du projet Kasa"/>
-									<p>HTML/CSS/JS/REACT/VITE/NODE.JS</p>
-									<a href="https://github.com/Angerome22/kasa/tree/master" target="_blank">Lien github Kasa</a>
-								</article>
-								<article class="card">
-									<h2 class title-card>Mon vieux Grimoire</h2>
-									<img src="./images/realisations/monvieuxgrimoire.JPG" alt="image du projet Mon vieux Grimoire"/>
-									<p>HTML/CSS/JS/EXPRESS/MONGODB/MONGOOSE</p>
-									<a href="https://github.com/Angerome22/MonVieuxGrimoire" target="_blank">Lien github Mon vieux Grimoire</a>
-								</article>
-								<article class="card">
-									<h2 class title-card>Menu Maker by Qwenta</h2>
-									<img src="./images/realisations/menumaker.jpg" alt="image du projet Menu Maker by Qwenta "/>
-									<p>GESTION DE PROJET/VEILLE/SPECIFICATIONS</p>
-									<a href="https://docs.google.com/presentation/d/e/2PACX-1vSCKRnbC54w3xbDJQDUjBZKN5n6ncQBjs41EpRG1r5PsCG-jmZhsYt73sXHvxbYhVteThIU0G68FT9y/pub?start=false&loop=false&delayms=3000&slide=id.gcb9a0b074_1_0" target="_blank">Lien Menu Maker by Qwenta </a>
-								</article>
-                        </div>
+  <!-- =======================================================
+  * Template Name: Tempo
+  * Template URL: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
 
-                        <h2 class="section-title" id="ct">Contact</h2>
-						<div class="contact">
-							<div class="mail">
-                                <ul class="menu-contact">
-                                    <li><a href="#">angeline.jerome12@gmail.com</a></li>
-									<li><a href="#">06 81 23 43 75</a></li>
-									<li><a href="https://www.linkedin.com/in/angeline-jerome-comptable-futur-developpeur/" target="_blank">
-									<svg width="24" height="24" viewBox="0 0 256 256" version="1.1" preserveAspectRatio="xMidYMid" size="24" class="text-foreground/50 hover:text-primary"><g><path d="M218.123122,218.127392 L180.191928,218.127392 L180.191928,158.724263 C180.191928,144.559023 179.939053,126.323993 160.463756,126.323993 C140.707926,126.323993 137.685284,141.757585 137.685284,157.692986 L137.685284,218.123441 L99.7540894,218.123441 L99.7540894,95.9665207 L136.168036,95.9665207 L136.168036,112.660562 L136.677736,112.660562 C144.102746,99.9650027 157.908637,92.3824528 172.605689,92.9280076 C211.050535,92.9280076 218.138927,118.216023 218.138927,151.114151 L218.123122,218.127392 Z M56.9550587,79.2685282 C44.7981969,79.2707099 34.9413443,69.4171797 34.9391618,57.260052 C34.93698,45.1029244 44.7902948,35.2458562 56.9471566,35.2436736 C69.1040185,35.2414916 78.9608713,45.0950217 78.963054,57.2521493 C78.9641017,63.090208 76.6459976,68.6895714 72.5186979,72.8184433 C68.3913982,76.9473153 62.7929898,79.26748 56.9550587,79.2685282 M75.9206558,218.127392 L37.94995,218.127392 L37.94995,95.9665207 L75.9206558,95.9665207 L75.9206558,218.127392 Z M237.033403,0.0182577091 L18.8895249,0.0182577091 C8.57959469,-0.0980923971 0.124827038,8.16056231 -0.001,18.4706066 L-0.001,237.524091 C0.120519052,247.839103 8.57460631,256.105934 18.8895249,255.9977 L237.033403,255.9977 C247.368728,256.125818 255.855922,247.859464 255.999,237.524091 L255.999,18.4548016 C255.851624,8.12438979 247.363742,-0.133792868 237.033403,0.000790807055" fill="currentColor"></path></g></svg></a></li>
-									<li><a href="#">17600 SAUJON (Charente Maritime)</a></li>
-                                </ul>
-							</div>
-                        </div>  
-					</section>	    
-			</main>
-			<footer>
-				<div class="footer">
-					<div class="logo-picture">
-						<img class="logo" src="./images/logo/IMG-20231101-WA0008.jpg" alt="logo du développeur Angerome22"/>	
-					</div>
-					<ul class="menu-footer">
-						<li><a href="#p">Présentation</a></li>
-						<li><a href="#c">Compétences</a></li>
-						<li><a href="#r">Réalisations</a></li>
-						<li><a href="#ct">contact</a></li>
-					</ul>
-					<p>© 2024 Angeline Jerome. Tous droits réservés.</p>
-				</div>
-			</footer>
-		</div>
-		
-	</body>
+<a href="https://wa.me/33681234375" class="whatsapp-float" target="_blank">
+<i class="bi bi-whatsapp"></i>
+</a>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Angelus & Numeri</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Accueil</a></li>
+          <li><a href="#about">A Propos</a></li>
+          <li><a href="#services">Prestations</a></li>
+          <li><a href="#portfolio">Tarifs</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+
+      <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2>Bienvenue dans le monde de la numérologie stratégique</h2>
+            <p></p>
+            <a href="#about" class="btn-get-started">Découvrir mon approche</a>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>A Propos</h2>
+        <p><span>En savoir plus</span> <span class="description-title">sur mon parcours<br></span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+                <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Angéline JEROME</h4>
+                <span></span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+
+        <div class="row gy-5">
+
+          <div class="content col-xl-5 d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
+            <h3>Rencontre décisive dans ma vie</h3>
+            <p>
+              A 56 ans la numérologie stratégique de Lydie Castells m'a révéler, il n'est jamais trop tard pour activer nos talents
+            </p>
+          </div>
+
+          <div class="col-xl-7" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4">
+
+              <div class="col-md-6 icon-box position-relative">
+                <i class="bi bi-briefcase"></i>
+                <h4><a href="" class="stretched-link">Se connaître dans son ensemble</a></h4>
+                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+              </div><!-- Icon-Box -->
+
+              <div class="col-md-6 icon-box position-relative">
+                <i class="bi bi-gem"></i>
+                <h4><a href="" class="stretched-link">Accepter ses dons et ses talents</a></h4>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+              </div><!-- Icon-Box -->
+
+              <div class="col-md-6 icon-box position-relative">
+                <i class="bi bi-broadcast"></i>
+                <h4><a href="" class="stretched-link">Connaître son Objectif de vie</a></h4>
+                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+              </div><!-- Icon-Box -->
+
+              <div class="col-md-6 icon-box position-relative">
+                <i class="bi bi-easel"></i>
+                <h4><a href="" class="stretched-link">Nager dans le sens du courant temporel</a></h4>
+                <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+              </div><!-- Icon-Box -->
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Prestations</h2>
+        <p>Réserver <span class="description-title">un Thème</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-activity icon"></i></div>
+              <h4><a href="" class="stretched-link">
+              Thème complet Adulte  
+              </a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
+              <h4><a href="" class="stretched-link">Thème Enfant/Jeune Adulte</a></h4>
+              <p>moins de 24 ans</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
+              <h4><a href="" class="stretched-link">Suivi Annuel Adulte</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+              <h4><a href="" class="stretched-link">Thème complet Couple ou Associé</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+              <h4><a href="" class="stretched-link">Consultation Dirigeant + orientation Stratégique Socièté</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div><!-- End Service Item -->
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="assets/img/cta-bg.jpeg" alt="">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Je me lance</h3>
+              <p>Soyez au rendez vous de votre vie, soyez des parents attentifs au bien être de leurs enfants, soyez un conjoint éclairé ou un associé dans la lumière.</p>
+              <a class="cta-btn" href="#">Je reserve un theme</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Catalogue</h2>
+        <p><span>Visualisez votre</span> <span class="description-title">thème</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">Tous</li>
+            <li data-filter=".filter-app">Theme individuel et couple</li>
+            <li data-filter=".filter-product">Suivi</li>
+            <li data-filter=".filter-branding">Stratégie et orientation</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/mansonry-portfolio-1.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Theme individuel et couple 1</h4>
+                <p>m Loreipsum, dolor sit</p>
+                <a href="assets/img/masonry-portfolio/mansonry-portfolio-1.png" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Suivi 1</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Stratégie et orientation 1</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Theme individuel et couple 2</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Suivi 2</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Stratégie et orientation 2</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Product 3</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Branding 3</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Les tarifs</h2>
+        <p><span>Voici</span> <span class="description-title">les prix </span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+
+        <div class="row g-4">
+
+          <div class="col-lg-4">
+            <div class="pricing-item">
+              <h3>Theme complet adulte</h3>
+              <div class="icon">
+                <i class="bi bi-box"></i>
+              </div>
+              <h4><sup></sup>50<sup>€</sup></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <div class="text-center"><a href="#" class="buy-btn">Réserver maintenant</a></div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4">
+            <div class="pricing-item">
+              <h3>Théme enfant/jeune adulte</h3>
+              <div class="icon">
+                <i class="bi bi-rocket"></i>
+              </div>
+
+             <h4><sup></sup>45<sup>€</sup></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <div class="text-center"><a href="#" class="buy-btn">Réserver maintenant</a></div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4">
+            <div class="pricing-item">
+              <h3>Suivi annuel adulte</h3>
+              <div class="icon">
+                <i class="bi bi-send"></i>
+              </div>
+             <h4><sup></sup>45<sup>€</sup></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <div class="text-center"><a href="#" class="buy-btn">Réserver maintenant</a></div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+           <div class="col-lg-4">
+            <div class="pricing-item">
+              <h3>Théme complet couple</h3>
+              <div class="icon">
+                <i class="bi bi-send"></i>
+              </div>
+             <h4><sup></sup>75<sup>€</sup></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <div class="text-center"><a href="#" class="buy-btn">Réserver maintenant</a></div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+           <div class="col-lg-4">
+            <div class="pricing-item">
+              <h3>Consultation dirigeant + orientation stratégique société</h3>
+              <div class="icon">
+                <i class="bi bi-send"></i>
+              </div>
+             <h4><sup></sup>Non disponible<sup></sup></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <div class="text-center"><a href="#" class="buy-btn">Réserver maintenant</a></div>
+            </div>
+          </div><!-- End Pricing Item -->
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+    <!-- ======= Section Témoignages ======= -->
+<section id="testimonials" class="testimonials py-5 bg-light">
+  <div class="container">
+
+    <div class="section-title text-center mb-5">
+      <h2>Témoignages</h2>
+      <p>Ce que nos clients disent de nous</p>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-lg-4 col-md-6">
+        <div class="testimonial-item p-4 bg-white rounded shadow-sm">
+          <p>"Super organisation pour l'anniversaire de mon fils ! Animations au top et tout le monde s'est amusé."</p>
+          <h5 class="mt-3 mb-0">Marie L.</h5>
+          <small>Parent satisfait</small>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="testimonial-item p-4 bg-white rounded shadow-sm">
+          <p>"Les animateurs étaient très professionnels et dynamiques. Je recommande vivement !"</p>
+          <h5 class="mt-3 mb-0">Paul D.</h5>
+          <small>Parent satisfait</small>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="testimonial-item p-4 bg-white rounded shadow-sm">
+          <p>"Mon enfant a adoré son anniversaire à thème ! Tout était parfait et clé en main."</p>
+          <h5 class="mt-3 mb-0">Sophie R.</h5>
+          <small>Parent satisfait</small>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- End Section Témoignages -->
+
+    <!-- ======= Section Statistiques ======= -->
+<section id="stats" class="stats py-5">
+  <div class="container">
+
+    <div class="row text-center">
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="stat-item p-4 bg-white rounded shadow-sm">
+          <span class="counter" data-target="0">0</span>
+          <p class="mt-2 mb-0">Thèmes réalisés</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="stat-item p-4 bg-white rounded shadow-sm">
+          <span class="counter" data-target="0">0</span>
+          <p class="mt-2 mb-0">Clients satisfaits</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="stat-item p-4 bg-white rounded shadow-sm">
+          <span class="counter" data-target="0">0</span>
+          <p class="mt-2 mb-0">Témoignages envoyés</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- End Section Statistiques -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Foire Aux Questions</h2>
+        <p><span>Ce que tout le monde se demande</span> <span class="description-title">Sur la numérologie stratégique</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active">
+                <h3>A quoi sert la numérologie stratégique</h3>
+                <div class="faq-content">
+                  <p>Découvrir ses dons et talents, se connaître comme jamais on a pu imaginer, dépasser ses blocages et agir et décider avec l'énergie du moment personnel et universel</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Est ce prouvé ? n'est ce pas un art divinatoire, de la voyance ?</h3>
+                <div class="faq-content">
+                  <p>2000 ans de statistiques pour preuves et de grands noms du passé et du présent qui l'ont appliqués et fait vivre</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Comment se passe un thème?</h3>
+                <div class="faq-content">
+                  <p>Il faudra communiquer votre nom, tous vos prénoms et votre date de naissance afin de permettre par le biais de calculs la création de votre théme. Une fois établi, je vous le restituerai en visio , en présentiel ou par téléphone pendant une durée de 2 heures environ.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>A quoi ça sert de faire son thème?</h3>
+                <div class="faq-content">
+                  <p>juste à se connaître comme jamais on aurait pu le faire jusqu'à présent et surtout appréhender sa vie d'une autre façon qu'avant en sachant tout ce qu'on a pu apprendre sur nous mêmes</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Qui peut le faire?</h3>
+                <div class="faq-content">
+                  <p>Que vous soyez un adulte (à partir de 24ans), ou un parent pour vos enfants (restitution du théme aux parents), un couple pour mieux se comprendre et connaître les besoins de l'autre, une entreprise pour pouvoir prendre les bonnes décisions au bon moment </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>A quel moment de sa vie peut-on faire un théme?</h3>
+                <div class="faq-content">
+                  <p>Dés l'instant ou on se pose des questions sur notre existence, notre statut familial ou au travail, lorsqu'on rencontre des difficultés, lorsqu'on veut travailler sur soi, dans des moments clés de votre vie (orientation professionnelle, changement de métier, retraite etc... )</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div><!-- End Faq Column-->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p><span>Besoin d'informations?</span> <span class="description-title">Contactez moi<br></span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2788.0710718778178!2d-0.9246156241373161!3d45.66947351971957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48010b569c726e05%3A0x69151357b218f7b8!2s55%20Rue%20Thiers%2C%2017600%20Saujon!5e0!3m2!1sfr!2sfr!4v1773237979841!5m2!1sfr!2sfr" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div><!-- End Google Maps -->
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Adresse</h3>
+                <p>55 rue Thiers 17600 SAUJON</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Appelez moi</h3>
+                <p>06 81 23 43 75</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email</h3>
+                <p>angeline.jerome12@gmail.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="https://formspree.io/f/xkoqrrwa" method="post" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Votre NOM" required>
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Votre Email" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Sujet" required>
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                </div>
+
+                                 <!-- Champ anti-spam invisible (très important) -->
+                    <input type="text" name="_gotcha" style="display:none" />
+
+                  <button type="submit">Envoyer un Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Tempo</span>
+          </a>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#hero">Accueil</a></li>
+            <li><a href="#about">A Propos</a></li>
+            <li><a href="#">Condition Générales de vente</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Mes Prestations</h4>
+          <ul>
+            <li><a href="#">Thème complet Adulte</a></li>
+            <li><a href="#">Thème Enfant/Jeune Adulte</a></li>
+            <li><a href="#">Suivi annuel Adulte</a></li>
+            <li><a href="#">Théme complet Couple ou Associé</a></li>
+            <li><a href="#">Consultation dirigeant + orientation stratégique socièté</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contactez moi</h4>
+          <p>55 rue Thiers</p>
+          <p>17600 SAUJON</p>
+          <p>FRANCE</p>
+          <p class="mt-4"><strong>Téléphone:</strong> <span>+33 06 81 23 43 75</span></p>
+          <p><strong>Email:</strong> <span>angeline.jerome12@gmail.com</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Tempo</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">2026</strong> <span>Angelus & Numeri</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
