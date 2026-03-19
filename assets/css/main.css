@@ -2596,3 +2596,48 @@ section[id],
 div[id] {
   scroll-margin-top: 130px;    /* ← ajuste cette valeur : 80px, 90px, 100px, 120px */
 }
+/* Force la navbar visible dès le chargement */
+#header,
+.navbar,
+.navmenu,
+.fixed-top {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(0) !important;
+  transition: none !important; /* enlève les animations de fade-in au scroll */
+}
+#header,
+.navbar {
+  top: 0 !important;
+  position: fixed !important;   /* ou sticky selon le template */
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Supprime tout effet "hide on top" ou "show on scroll" */
+body.scrolled .navbar,
+#header.scrolled {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+#about {
+  background: linear-gradient(to bottom, #0a1428, #1e3a5f); /* indigo sombre élégant */
+  color: #e0e0ff;
+}
+
+#about h2 {
+  color: #ffffff;
+}
+
+#about p {
+  color: #d4d4ff;
+}
+.about-banner {
+  position: relative;
+  overflow: hidden;
+}
+.about-content p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #e0e0ff;
+}
