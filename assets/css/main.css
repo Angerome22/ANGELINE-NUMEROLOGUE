@@ -2641,3 +2641,91 @@ body.scrolled .navbar,
   line-height: 1.8;
   color: #e0e0ff;
 }
+/* === TEXTE PLUS GRAND ET PLUS LISIBILE SUR TOUT LE SITE === */
+
+body {
+  font-size: 1.1rem;           /* Taille de base augmentée */
+  line-height: 1.8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+}
+
+p {
+  font-size: 1.15rem;          /* Paragraphes plus gros */
+  margin-bottom: 1.5rem;
+}
+
+.lead {
+  font-size: 1.25rem;          /* Texte d'introduction encore plus visible */
+}
+
+/* Section About spécifiquement */
+#about p {
+  font-size: 1.2rem;
+  line-height: 1.85;
+}
+
+/* Titres plus imposants */
+#about h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.8rem;
+}
+#about {
+  padding: 100px 0;
+}
+
+.about-content {
+  padding-left: 20px;
+}
+
+.about-img img {
+  height: 520px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* Pour mobile */
+@media (max-width: 992px) {
+  .about-content {
+    padding-left: 0;
+    margin-top: 40px;
+  }
+}
+/* === FORÇAGE FINAL - Suppression du bleu sur About === */
+#about,
+#about.section,
+#about.section-padding {
+  background-color: #f4ede0 !important;
+  background-image: none !important;
+  color: #3c2f25 !important;
+}
+
+#about h1,
+#about h2,
+#about h3,
+#about .section-title h2 {
+  color: #9c7b5a !important;
+}
+
+#about p,
+#about .lead,
+#about span {
+  color: #3c2f25 !important;
+  font-size: 1.22rem !important;
+  line-height: 1.85 !important;
+}
+
+/* Si jamais il reste un overlay ou un gradient */
+#about::before,
+#about .overlay,
+#about .background-overlay {
+  background: transparent !important;
+  opacity: 0 !important;
+}
+
+/* Bonus : Amélioration globale de la lisibilité */
+body {
+  background-color: #f9f5eb !important;
+}
