@@ -2729,3 +2729,10 @@ p {
 body {
   background-color: #f9f5eb !important;
 }
+.about-training-box {
+  text-align: center;
+}
+
+.about-training-box p {
+  text-align: justify;
+}
