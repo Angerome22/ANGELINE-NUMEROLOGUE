@@ -2736,3 +2736,91 @@ body {
 .about-training-box p {
   text-align: center;
 }
+/* Superposition élégante des deux photos */
+.about-photos {
+  position: relative;
+  height: 520px;                    /* Ajuste selon tes photos */
+}
+
+.about-photos .main-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 78%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Légende sous la photo principale */
+.photo-caption {
+  position: absolute;
+  bottom: -75px;           /* Ajuste cette valeur si besoin */
+  left: 0;
+  width: 78%;
+  z-index: 3;
+}
+
+.photo-caption h3 {
+  font-size: 1.85rem;
+  color: #3c2f25;
+  margin-bottom: 4px;
+}
+
+.about-photos .secondary-photo {
+  position: absolute;
+  bottom: -45px;     /* Décalage vers le bas */
+  right: -35px;      /* Décalage vers la droite */
+  width: 58%;        /* Taille relative de la deuxième photo */
+  height: auto;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+  z-index: 2;
+  border: 6px solid white;   /* Bordure blanche pour séparer les photos */
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .about-photos {
+    height: 420px;
+  }
+  .about-photos .main-photo {
+    width: 85%;
+  }
+  .photo-caption {
+    bottom: -55px;
+  }
+  .about-photos .secondary-photo {
+    bottom: -30px;
+    right: -25px;
+    width: 55%;
+  }
+}
+/* Agrandir et aérer la section About */
+#about {
+  padding-top: 140px !important;
+  padding-bottom: 140px !important;
+  min-height: 700px;           /* Hauteur minimale pour qu'elle prenne plus de place */
+}
+
+.about-content {
+  padding-top: 40px;
+}
+
+.about-photos {
+  height: 580px;               /* Hauteur augmentée pour les photos */
+}
+
+/* Ajustement pour mobile */
+@media (max-width: 992px) {
+  #about {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+    min-height: auto;
+  }
+  .about-photos {
+    height: 460px;
+  }
+}
