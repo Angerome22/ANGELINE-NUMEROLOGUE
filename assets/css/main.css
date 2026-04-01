@@ -2824,3 +2824,53 @@ body {
     height: 460px;
   }
 }
+#contact p span:first-child {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+#contact p span.description-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color:#dc3545;
+}
+#header {
+  background-color: rgba(10, 20, 40, 0.95) !important;   /* Noir transparent */
+  backdrop-filter: blur(8px);
+}
+/* Style des cartes d'offres avec contour élégant autour de la photo */
+.service-card {
+  background: #f8f1e3;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  background: #f4ebda;
+}
+
+.portfolio-img-wrapper {
+  position: relative;
+  border: 6px solid #f4ede0;        /* Contour beige doux */
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.portfolio-img-wrapper img {
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover .portfolio-img-wrapper img {
+  transform: scale(1.04);
+}
+
+/* Texte à côté */
+.service-card h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #9c7b5a;
+}
