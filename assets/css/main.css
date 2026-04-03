@@ -2702,19 +2702,31 @@ p {
   color: #3c2f25 !important;
 }
 
-#about h1,
-#about h2,
-#about h3,
-#about .section-title h2 {
-  color: #9c7b5a !important;
-}
-
+/* === TEXTE PLUS GROS ET PLUS ÉPAIS DANS LA SECTION ABOUT === */
 #about p,
 #about .lead,
 #about span {
   color: #3c2f25 !important;
-  font-size: 1.22rem !important;
+  font-size: 1.35rem !important;        /* Texte plus gros */
   line-height: 1.85 !important;
+  font-weight: 400 !important;          /* Légèrement plus épais */
+}
+
+#about .lead {
+  font-size: 1.48rem !important;        /* Le texte d'introduction encore plus grand */
+  font-weight: 500 !important;          /* Plus épais */
+  margin-bottom: 1.8rem !important;
+}
+
+#about h2 {
+  font-size: 3.2rem !important;         /* Titre plus imposant */
+  font-weight: 700 !important;
+  margin-bottom: 1.8rem !important;
+}
+
+#about h3 {
+  font-size: 2.1rem !important;
+  font-weight: 600 !important;
 }
 
 /* Si jamais il reste un overlay ou un gradient */
@@ -2873,4 +2885,65 @@ body {
   font-size: 1.75rem;
   margin-bottom: 1rem;
   color: #9c7b5a;
+}
+#numerologie h3 {
+  font-size: 2.35rem !important;
+  font-weight: 700 !important;
+}
+
+#numerologie p.lead {
+  font-size: 1.6rem !important;
+  font-weight: 550 !important;
+}
+
+#numerologie p:not(.lead) {
+  font-size: 1.38rem !important;
+  font-weight: 480 !important;
+}
+#numerologie .about-img img {
+  max-height: 520px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+.btn-primary {
+  padding: 14px 32px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-radius: 50px;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+}
+/* Boutons accordés avec le fond des cartes */
+.btn-primary {
+  background-color: #9c7b5a;        /* Brun doré doux - même famille que ta palette */
+  border-color: #9c7b5a;
+  color: white;
+  padding: 14px 32px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #8c6f5c;        /* Version légèrement plus foncée au hover */
+  border-color: #8c6f5c;
+  color: white;
+  transform: translateY(-3px);
+}
+.portfolio-img-wrapper img {
+  filter: none;                    /* Retire le noir et blanc */
+  border: 6px solid #f4ede0;
+}
+#testimonials .lead {
+  font-size: 1.5rem;
+  line-height: 1.85;
+  color: #8c6f5c;
+  font-weight: 450;
+  max-width: 620px;
+  margin: 3rem auto 0;
+  text-align: center;
 }
