@@ -2947,3 +2947,30 @@ body {
   margin: 3rem auto 0;
   text-align: center;
 }
+.about-img {
+    width: 100%;
+}
+
+.about-img img.img-custom {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;        /* Supprime toute limitation */
+    object-fit: contain !important;
+    border-radius: 1rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 0 auto;
+}
+
+/* Grande hauteur autorisée sur écrans moyens et grands */
+@media (min-width: 992px) {
+    .about-img img.img-custom {
+        max-height: 950px;              /* ← Augmente si tu veux encore plus grand */
+    }
+}
+
+@media (min-width: 1400px) {
+    .about-img img.img-custom {
+        max-height: 1150px;
+    }
+}
