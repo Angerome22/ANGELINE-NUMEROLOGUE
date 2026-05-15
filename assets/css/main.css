@@ -2974,3 +2974,21 @@ body {
         max-height: 1150px;
     }
 }
+
+
+@media (max-width: 991px) {
+    .header {
+        height: 150px !important;           /* Augmente la hauteur de la barre */
+        padding: 20px 0 !important;
+    }
+
+    .logo {
+        font-size: 1.7rem !important;
+    }
+
+    /* Décalage du menu mobile pour qu'il commence plus bas */
+    .navmenu.show ul {
+        top: 90px !important;              /* Important : doit correspondre à la nouvelle hauteur */
+        padding-top: 30px !important;
+    }
+}

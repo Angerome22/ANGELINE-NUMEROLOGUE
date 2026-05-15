@@ -241,3 +241,5 @@ counters.forEach(counter => {
   };
   updateCounter();
 });
+
+  
