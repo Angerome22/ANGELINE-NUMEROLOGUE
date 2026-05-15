@@ -2978,7 +2978,7 @@ body {
 
 @media (max-width: 991px) {
     .header {
-        height: 500px !important;           /* Augmente la hauteur de la barre */
+        height: 250px !important;           /* Augmente la hauteur de la barre */
         padding: 10px 0 !important;
     }
 
@@ -2988,7 +2988,7 @@ body {
 
     /* Décalage du menu mobile pour qu'il commence plus bas */
     .navmenu.show ul {
-        top: 500px !important;              /* Important : doit correspondre à la nouvelle hauteur */
+        top: 250px !important;              /* Important : doit correspondre à la nouvelle hauteur */
         padding-top: 30px !important;
     }
 }
